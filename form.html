@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="/submit">
+<fieldset><!--this fieldset tag works like border around data inside this tag-->
+    <legend>personal information</legend><!--legend tag is used to give caption to fieldset tag-->
+    <label for="name">name</label>
+    <input required type="text" name="name" placeholder="enter the name"><!--required attribute is used for mandatory filing info-->
+</fieldset>
+
+    
+    <br><br>
+    <label for="gender">Male</label>
+    <input type="radio" name="gender"id="gender" value="m">
+    
+    <label for="gender">Female</label>
+    <input type="radio" name="gender" id="gender" value="f"><!--value is sent to the backend-->
+    <br>
+    <input type="checkbox" id="phy" name="subject" value="physics">
+    <label for="phy">Physics</label>
+    <br>
+    <input type="checkbox" id="eng" name="subject" value="eng">
+    <label for="eng">English</label>
+    <br>
+     <label for="file">choose file</label>
+     <input type="file" id="file" name="file"><!--choosing file to upload-->
+     <br>
+      <label for="dob">Enter DOB</label>
+      <input type="date" name="" id="">
+      <br>
+      <label for="email">enter email id</label>
+      <input type="email" name="email" id="">
+      <br>
+       <br>
+      <input type="tel" placeholder="enter mobile no">
+      <br>
+      <br>
+    <label for="pwd">type your password</label>
+    <input type="password" id="pwd" name="pwd">
+
+    <button >Submit</button>
+</form>
+</body>
+</html>
+
